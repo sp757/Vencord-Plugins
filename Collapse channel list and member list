@@ -1,0 +1,63 @@
+/**
+ * @name Collapsible Sidebars
+ * @author Bro7nze
+ */
+
+ :root {
+    --collapsed-channel-max-width: 55px;
+    --collapsed-channel-min-width: 55px;
+    --collapsed-members-max-width: 60px;
+    --collapsed-members-min-width: 60px;
+    --expanded-channel-max-width: 264px;
+    --expanded-channel-min-width: 264px;
+    --expanded-members-width: 240px;
+    --expanded-members-min-width: 240px;
+    --expanded-profile-width: 340px;
+}
+
+
+/* Servers List */
+[class*="wrapper_ef3116"] {
+    opacity: 0.85;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Channels List */
+[class*="sidebar_c48ade"] {
+    max-width: var(--collapsed-channel-max-width)!important; 
+    min-width: var(--collapsed-channel-min-width)!important;; 
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
+}
+
+/* Members List */
+[class*="membersWrap"] {    
+    width: var(--collapsed-members-max-width)!important;
+    min-width: var(--collapsed-members-max-width)!important;
+    transform: translateX(130%) !important; 
+    opacity: 0.5;
+    transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
+}
+
+/* When the mouse is over a Servers List, we display it in full */
+[class*="wrapper_ef3116"]:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* When the mouse is over a Channels List, we display it in full */
+[class*="sidebar_c48ade"]:hover {
+    max-width: var(--expanded-channel-max-width)!important;
+    min-width: var(--expanded-channel-min-width)!important;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
+}
+
+/* When the mouse is over a Members List, we display it in full */
+[class*="membersWrap"]:hover {
+    transform: translateX(0) !important;
+    opacity: 1;
+    width: var(--expanded-members-width)!important;
+    min-width: var(--expanded-members-min-width)!important;
+    transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
+}
