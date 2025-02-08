@@ -4,10 +4,12 @@
  */
 
  :root {
+    --collapsed-servers-max-width: 5px;
     --collapsed-channel-max-width: 55px;
     --collapsed-channel-min-width: 55px;
     --collapsed-members-max-width: 60px;
     --collapsed-members-min-width: 60px;
+    --expanded-servers-max-width: 100px;
     --expanded-channel-max-width: 264px;
     --expanded-channel-min-width: 264px;
     --expanded-members-width: 240px;
@@ -18,6 +20,7 @@
 
 /* Servers List */
 [class*="wrapper_ef3116"] {
+    max-width: var(--collapsed-servers-max-width)!important; 
     opacity: 0.85;
     transition: opacity 0.5s ease-in-out;
 }
@@ -41,6 +44,7 @@
 
 /* When the mouse is over a Servers List, we display it in full */
 [class*="wrapper_ef3116"]:hover {
+    max-width: var(--expanded-servers-max-width)!important;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
