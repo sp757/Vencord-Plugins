@@ -1,53 +1,38 @@
- :root {
-    --collapsed-servers-max-width: 5px;
-    --collapsed-channel-max-width: 55px;
-    --collapsed-channel-min-width: 55px;
-    --collapsed-members-max-width: 60px;
-    --collapsed-members-min-width: 60px;
-    --expanded-servers-max-width: 100px;
-    --expanded-channel-max-width: 264px;
-    --expanded-channel-min-width: 264px;
-    --expanded-members-width: 240px;
-    --expanded-members-min-width: 240px;
-    --expanded-profile-width: 340px;
-}
-
-
 /* Servers List */
 [class*="wrapper_ef3116"] {
-    max-width: var(--collapsed-servers-max-width)!important; 
-    opacity: 0.85;
-    transition: opacity 0.5s ease-in-out, max-width 1s ease-in-out;
+    max-width: 5px!important; 
+    opacity: 1;
+    transition: max-width 2s ease-in-out;
 }
 
 /* Channels List */
 [class*="sidebar_c48ade"] {
-    max-width: var(--collapsed-channel-max-width)!important; 
-    min-width: var(--collapsed-channel-min-width)!important;; 
-    opacity: 0.5;
-    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
+    max-width: 55px!important; 
+    min-width: 55px!important;; 
+    opacity: 1;
+    transition: max-width 2s ease-in-out, min-width 2s ease-in-out;
 }
 
 /* Members List */
 [class*="membersWrap"] {    
-    width: var(--collapsed-members-max-width)!important;
-    min-width: var(--collapsed-members-max-width)!important;
-    transform: translateX(130%) !important; 
-    opacity: 0.5;
+    width: 60px!important;
+    min-width: 60px!important;
+    transform: translateX(145%) !important; 
+    opacity: 1;
     transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
 
 /* When the mouse is over a Servers List, we display it in full */
 [class*="wrapper_ef3116"]:hover {
-    max-width: var(--expanded-servers-max-width)!important;
+    max-width: 100px!important;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out;
+    transition: max-width 0.5s ease-in-out;
 }
 
 /* When the mouse is over a Channels List, we display it in full */
 [class*="sidebar_c48ade"]:hover {
-    max-width: var(--expanded-channel-max-width)!important;
-    min-width: var(--expanded-channel-min-width)!important;
+    max-width: 264px!important;
+    min-width: 264px!important;
     opacity: 1;
     transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
 }
@@ -56,7 +41,7 @@
 [class*="membersWrap"]:hover {
     transform: translateX(0) !important;
     opacity: 1;
-    width: var(--expanded-members-width)!important;
-    min-width: var(--expanded-members-min-width)!important;
+    width: 240px!important;
+    min-width: 240px!important;
     transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
