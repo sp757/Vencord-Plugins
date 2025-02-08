@@ -6,8 +6,8 @@
 
 /* Channels List */
 [class*="sidebar_c48ade"] {
-    max-width: 50px!important; 
-    min-width: 50px!important;; 
+    max-width: 60px!important; 
+    min-width: 60px!important;; 
     transition: max-width 2s ease-in-out, min-width 2s ease-in-out;
 }
 
@@ -19,36 +19,29 @@
     transition: width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
 
-/* Members List in dms */
-[class*="container_c8ffbb"] {    
-    width: 70px!important;
-    min-width: 10px!important;
-    transition: width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
-}
-
 /* Members Profile in dms */
 [class*="outer_c0bea0"] {    
-    width: 82px!important;
-    min-width: 10px!important; 
+    width: 150px!important;
+    min-width: 0px!important; 
     opacity: 0.5;
     transition: opacity 1s ease-in-out, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
 
-/* When the mouse is over a Servers List, we display it in full */
+/* When the mouse is over a Servers List */
 [class*="wrapper_ef3116"]:hover {
     max-width: 100px!important;
     opacity: 1;
     transition: max-width 0.5s ease-in-out;
 }
 
-/* When the mouse is over a Channels List, we display it in full */
+/* When the mouse is over a Channels List */
 [class*="sidebar_c48ade"]:hover {
     max-width: 264px!important;
     min-width: 264px!important;
     transition: max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
 }
 
-/* When the mouse is over a Members List, we display it in full */
+/* When the mouse is over a Members List */
 [aria-label="Members"]:hover,
 [class^=members]:hover {
     width: 240px!important;
@@ -56,14 +49,7 @@
     transition: width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
 
-/* When the mouse is over a Members List in dms, we display it in full */
-[class*="container_c8ffbb"]:hover{
-    width: 240px!important;
-    min-width: 240px!important;
-    transition: width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
-}
-
-/* When the mouse is over a Members Profile in dms, we display it in full */
+/* When the mouse is over a Members Profile in dms */
 [class*="outer_c0bea0"]:hover{
     opacity: 1;
     width: 340px!important;
