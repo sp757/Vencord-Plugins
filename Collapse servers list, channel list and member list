@@ -4,7 +4,6 @@
     opacity: 1;
     transition: max-width 2s ease-in-out;
 }
-
 /* Channels List */
 [class*="sidebar_c48ade"] {
     max-width: 55px!important; 
@@ -12,23 +11,28 @@
     opacity: 1;
     transition: max-width 2s ease-in-out, min-width 2s ease-in-out;
 }
-
 /* Members List */
-[class*="membersWrap"] {    
+[aria-label="Members"],
+[class^=members] {    
     width: 60px!important;
-    min-width: 60px!important;
-    transform: translateX(145%) !important; 
+    min-width: 40px!important;
     opacity: 1;
     transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
 }
-
+/* Members List in dms */
+[class*="container_c8ffbb"] {    
+    width: 20px!important;
+    min-width: 100px!important;
+    transform: translateX(50%) !important; 
+    opacity: 1;
+    transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
+}
 /* When the mouse is over a Servers List, we display it in full */
 [class*="wrapper_ef3116"]:hover {
     max-width: 100px!important;
     opacity: 1;
     transition: max-width 0.5s ease-in-out;
 }
-
 /* When the mouse is over a Channels List, we display it in full */
 [class*="sidebar_c48ade"]:hover {
     max-width: 264px!important;
@@ -36,9 +40,17 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out, min-width 0.5s ease-in-out;
 }
-
 /* When the mouse is over a Members List, we display it in full */
-[class*="membersWrap"]:hover {
+[aria-label="Members"]:hover,
+[class^=members]:hover {
+    transform: translateX(0) !important;
+    opacity: 1;
+    width: 240px!important;
+    min-width: 240px!important;
+    transition: transform 0.5s ease-in-out 0.2s, opacity 0.5s ease-in-out 0.2s, width 0.5s ease-in-out 0.2s, min-width 0.5s ease-in-out 0.2s;
+}
+/* When the mouse is over a Members List in dms, we display it in full */
+[class*="container_c8ffbb"]:hover{
     transform: translateX(0) !important;
     opacity: 1;
     width: 240px!important;
