@@ -22,7 +22,7 @@
 [class*="wrapper_ef3116"] {
     max-width: var(--collapsed-servers-max-width)!important; 
     opacity: 0.85;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out;
 }
 
 /* Channels List */
@@ -46,7 +46,7 @@
 [class*="wrapper_ef3116"]:hover {
     max-width: var(--expanded-servers-max-width)!important;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out;
 }
 
 /* When the mouse is over a Channels List, we display it in full */
