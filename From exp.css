@@ -44,17 +44,11 @@
   height: calc(100vh - 33px) !important;
 }
 
-
-
-
-
-
-
 .subtitleContainer_f75fb0 {
-  margin: 8px 0 0 8px;
-  width: calc(100% - var(--custom-member-list-width) - 16px);
+  margin: 0px 0 10 80px;
+  width: calc(98.7% - var(--custom-member-list-width) - 17.1px);
   /* adjust size of title to align with chat content */
-  z-index: 101;
+  z-index: 100;
 }
 
 .chat_f75fb0:not(:has(.membersWrap_c8ffbb)) .subtitleContainer_f75fb0 {
@@ -62,8 +56,6 @@
   width: calc(100% - 16px);
   /* reseize it for no memberlist */
 }
-
-
 
 .sidebar_c48ade[data-collapsed="false"] .sidebarResizeHandle_c48ade {
   pointer-events: all;
