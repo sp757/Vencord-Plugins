@@ -3,6 +3,7 @@
   --show-memberlist-rpc: none;
   --userbanner-blur: 0px;
 }
+
 .theme-darker:not(.custom-theme-background) {
   --bg-base-tertiary: #171717;
   --background-base-lowest: var(--bg-base-tertiary) !important;
@@ -21,8 +22,6 @@
   --background-base-low: var(--background-base-lower);
   /* make darker OGG DDEX4 colors, who needs another import */
 }
-
-
 
 .memberInner__5d473 {
   min-height: 44px;
@@ -45,91 +44,11 @@
   height: calc(100vh - 33px) !important;
 }
 
-.content_f75fb0>.chatContent_f75fb0,
-.container_f369db,
-.callContainer_cb9592,
-.contentRegion__23e6b {
-  margin: 0 8px 24px 8px;
-  border-radius: 0 0 16px 16px;
-  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  z-index: 100;
-  /* windowizes chat  */
-}
 
-.callContainer_cb9592 {
-  border-radius: 16px !important;
-}
 
-.chat_f75fb0:has(.callContainer_cb9592) .container__01ae2 {
-  margin-top: 0px;
-}
 
-.content_f75fb0 .outer_c0bea0 {
-  margin: 0 8px 0 0;
-  height: calc(100% - 24px);
-  border-radius: 0 0 16px 16px;
-}
 
-.form_f75fb0::before {
-  display: none;
-}
 
-.visual-refresh .markup__75297 code {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-}
-
-.channelBottomBarArea_f75fb0 {
-  margin: 0 !important;
-  border-top: 1px solid var(--border-subtle);
-
-  .channelTextArea_f75fb0 {
-    border-radius: 0 !important;
-    border: none;
-  }
-
-  .accessoryBar__74017 {
-    margin: 0;
-    padding: 8px 16px;
-    border-top: 1px solid var(--border-faint);
-  }
-
-  /* makes message box stick to bottom */
-}
-
-.base_c48ade:has(.headerButton_f37cb1[aria-label="Blade0's Theme Server, server actions"]) {
-  background-image: linear-gradient(to bottom, transparent 0%, var(--bg-base-tertiary) 75%), url(https://blade04208.github.io/ddex4/src/serverwall.jpg) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  --background-base-lower: rgba(255, 255, 255, 0.1);
-
-  .channelTextArea_f75fb0 {
-    background-color: transparent;
-  }
-
-  .chatContent_f75fb0,
-  .subtitleContainer_f75fb0 {
-    backdrop-filter: blur(20px);
-  }
-
-  .title_f75fb0,
-  .subtitleContainer_f75fb0 {
-    border: none;
-    border-radius: 16px 16px 0px 0px;
-    overflow: hidden;
-  }
-}
-
-.container__01ae2 {
-  margin: 8px 8px 24px 0;
-  border-radius: 16px;
-  overflow: hidden;
-
-  &.floating__01ae2 {
-    margin: 16px 16px 32px 0;
-  }
-}
 
 .subtitleContainer_f75fb0 {
   margin: 8px 0 0 8px;
@@ -153,22 +72,6 @@
   left: calc(var(--custom-guild-sidebar-width) + 4px);
 }
 
-.content_c48ade:has([data-collapsed="true"]) .chatContent_f75fb0,
-.content_c48ade:has([data-collapsed="true"]) .subtitleContainer_f75fb0 {
-  margin-left: 0px;
-  /* bring chat closer to servers */
-}
-
-.content_c48ade:has([data-collapsed="true"]) .subtitleContainer_f75fb0 {
-  width: calc(100% - 238px);
-  /* resize subtitle to accomadate collapsed serverlist */
-}
-
-.content_c48ade:not(:has([data-collapsed="false"], .membersWrap_c8ffbb)) .subtitleContainer_f75fb0 {
-  width: calc(100% - 8px);
-  /* resize subtitle to accomadate collapsed serverlist */
-}
-
 .title_f75fb0 {
   border-radius: 16px 16px 0 0;
   /* make title actually be rounded becuase it uhh fuck askjz\dagfweqdiohfyivhwebqwdhi */
@@ -189,7 +92,6 @@
 
 /* the great fuckwad 1 */
 .container_c8ffbb,
-.members_c8ffbb,
 .member_c8ffbb,
 .container__7641b,
 .chat_f75fb0,
@@ -217,15 +119,7 @@
   border: none !important;
 }
 
-.sidebar_c48ade,
-.content__99f8c,
-.container__2637a,
-.sidebarList_c48ade,
-.biteSize_c0bea0 .body__5be3e,
-.chat_f75fb0,
-[id^="folder-items-"] {
-  overflow: visible !important;
-}
+
 
 .guilds_c48ade {
   top: -0px;
