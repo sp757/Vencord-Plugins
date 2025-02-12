@@ -8,48 +8,6 @@
 
   /* blurple channels */
 }
-
-
-.pill_e5445c {
-  width: 100%;
-  overflow: visible !important;
-  opacity: 1;
-  /* pill rules */
-}
-
-.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"] {
-  right: 0;
-  height: 53px !important;
-  background-color: var(--background-accent);
-  width: 64px;
-  border-radius: 30% 0 0 30%;
-  filter: drop-shadow(0px 14px 8px rgba(0, 0, 0, 0.1));
-  pointer-events: none;
-  animation: pillAnimateIn 0.3s backwards cubic-bezier(0, 0, 0, 1.4);
-  /* open server thinger */
-}
-
-.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"]::after,
-.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"]::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 15px 15px 0 15px var(--background-accent);
-  /* open server thinger rounding */
-}
-
-.pill_e5445c [style="opacity: 1; height: 40px; transform: none;"]::before {
-  top: 100%;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 20px;
-  box-shadow: 15px -15px 0 15px var(--background-accent);
-  /* open server thinger */
-}
-
 .sidebarRegion__23e6b {
   max-width: 300px;
 
